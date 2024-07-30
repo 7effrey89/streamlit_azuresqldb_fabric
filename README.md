@@ -48,7 +48,8 @@ Run the streamlit app:
 - Each of the .py files represent a webpage in streamlit.
 - I've decided to write each page as if it was a standalone python script; making it easy for you to paste into your own solutions. The only dependencies each page has is to the .streamlit/secrets.toml file that contains the global variable of your azure sql db connection details.
 - If you are here for only the python logic, you can remove all streamlit related code (typically all with st.xxxxx like replacing st.session_state['xx'] with a variable, st.write/st.table with print('xxx') etc.
-
+- main.py serve as the place to configure the left navigation menu for the streamlit app. Here you can easily remove and add more webpages.
+  
 ## Troubleshooiting
 I've included a troubleshooting.txt with all the packages and their listed versions that was installed on my machine - just in case that becomes relevant for you one day...
 
