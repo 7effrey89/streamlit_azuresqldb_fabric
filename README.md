@@ -59,14 +59,17 @@ I've included a troubleshooting.txt with all the packages and their listed versi
 I've also made the solution ready for you to run it on a container. You can modify the solutions to your liking - if you add more packages to the solution, remember to include them in the requirement.txt file so they will be included in the docker image when you build it.
 
 1. : Open terminal in VS Code, and make sure you are located in the root folder of the project e.g.:
+
 ``` cd c:\streamlit_azuresqldb_fabric ``` 
 
 2. start docker desktop on your local machine
 
 3. Building Docker Image using the details from the file Dockerfile, and call it streamlit_azuresqldb_fabric
-docker build -f Dockerfile -t streamlit_azuresqldb_fabric .
+
+```docker build -f Dockerfile -t streamlit_azuresqldb_fabric . ```
 
 4. Run the docker Image, and redicts traffic from 8501 to 80
-docker run -p 80:8501 streamlit_azuresqldb_fabric
+
+```docker run -p 80:8501 streamlit_azuresqldb_fabric```
 
 
