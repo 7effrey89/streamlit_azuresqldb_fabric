@@ -1,4 +1,6 @@
 # Custom Data Entry UI for Azure SQL Database and Microsoft Fabric Warehouse and Lakehouse:
+![image](https://github.com/user-attachments/assets/7d768b49-1483-4056-ab3e-924366af3f9c)
+
 
 This demo uses a python framework called streamlit to accelerate the development of browser based solutions.
 In this demo you will find pages that enables you:
