@@ -23,11 +23,11 @@ if 'token' not in st.session_state:
     st.session_state['token'] = None
 
 #the endpoint url is the same for all sql endpoints on the workspace
-SQL_ENDPOINT = "x6eps4xrq2xudenlfv6naeo3i4-d5w5ahlsli3urayctd2h6xygo4.msit-datawarehouse.fabric.microsoft.com" 
+SQL_ENDPOINT = "<your-connectionstring>" #e.g. 327tgddygq5ejgjqkdcgviwrja-xmh4dzc6lwgunnahc7xybkwxzy.datawarehouse.fabric.microsoft.com" 
+DATABASE = "<your-warehouse-name>" #also known as the fabric resource name
+TABLE_SCHEMA = '<name-of-schema>' #e.g.'dbo'
+TABLE_NAME = '<name-of-table>' #e.g.'product'
 
-DATABASE = "jla_fls_lakehouse"
-TABLE_SCHEMA = 'dbo'
-TABLE_NAME = 'Address' 
 QUERY = f'select top (1000) * from {TABLE_SCHEMA}.{TABLE_NAME};'
 
 # Uses st.cache_resource to only run once.

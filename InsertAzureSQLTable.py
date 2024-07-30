@@ -21,9 +21,9 @@ USERNAME = st.secrets["username"]
 PASSWORD = st.secrets["password"]
 DRIVER = st.secrets["driver"]
 
-DATABASE = 'sandbox'
-TABLE_SCHEMA = 'dbo'
-TABLE_NAME = 'person'
+DATABASE = '<name-of-database>' #e.g.'sandbox'
+TABLE_SCHEMA = '<name-of-schema>' #e.g. 'dbo'
+TABLE_NAME = '<name-of-table>' #e.g. 'person'
 QUERY = f'SELECT top (100) name, address, type, date from {TABLE_SCHEMA}.{TABLE_NAME};'
 DROP_TABLE = f"DROP TABLE {TABLE_SCHEMA}.{TABLE_NAME}"
 INIT_TABLE = f"""

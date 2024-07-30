@@ -27,9 +27,9 @@ PASSWORD = st.secrets["password"]
 DRIVER = st.secrets["driver"]
 
 # Database and table details
-DATABASE = 'sandbox'
-TABLE_SCHEMA = 'dbo'
-TABLE_NAME = 'product'
+DATABASE = '<name-of-database>' #e.g.'sandbox'
+TABLE_SCHEMA = '<name-of-schema>' #e.g. 'dbo'
+TABLE_NAME = '<name-of-table>' #e.g. 'product'
 QUERY = f'select id, name, category from {TABLE_SCHEMA}.{TABLE_NAME};'
 DROP_TABLE = f"DROP TABLE {TABLE_SCHEMA}.{TABLE_NAME}"
 INIT_TABLE = f"""

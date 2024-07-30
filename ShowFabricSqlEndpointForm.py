@@ -87,8 +87,8 @@ with st.expander("Jeffrey's Notes"):
 if st.button('Login'):
     get_token()
 
-server = st.text_input('SQL Analytics Endpoint (All Fabric items in a workspace shares the same SQL Endpoint/Connectionstring)', key='SQL_ENDPOINT', value='x6eps4xrq2xudenlfv6naeo3i4-d5w5ahlsli3urayctd2h6xygo4.msit-datawarehouse.fabric.microsoft.com')
-database = st.text_input('Database (e.g. name of the Fabric Warehouse item)', key='DATABASE', value='jla_fls_warehouse')
+server = st.text_input('SQL Analytics Endpoint (All Fabric items in a workspace shares the same SQL Endpoint/Connectionstring)', key='SQL_ENDPOINT', value='xxxEnter-You-Endpointxxxxxxxx-datawarehouse.fabric.microsoft.com')
+database = st.text_input('Database (e.g. name of the Fabric Warehouse item)', key='DATABASE', value='My_Ware_Lakehouse_Name')
 # schema = st.text_input('Schema', key='TABLE_SCHEMA', value='dbo')
 # table = st.text_input('Table Name', key='TABLE_NAME', value='Address')
 query = st.text_input('Query (Fabric is case sensitive)', key='QUERY', value=f'select top (1000) * from sys.tables;')

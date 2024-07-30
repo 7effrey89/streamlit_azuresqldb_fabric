@@ -53,10 +53,10 @@ if 'credential' not in st.session_state:
 
 #the endpoint url is the same for all sql endpoints on the workspace
 #Fabric details
-SQL_ENDPOINT = "327tgddygq5ejgjqkdcgviwrja-xmh4dzc6lwgunnahc7xybkwxzy.datawarehouse.fabric.microsoft.com" 
+SQL_ENDPOINT = "<your-connectionstring>"  #e.g. 327tgddygq5ejgjqkdcgviwrja-xmh4dzc6lwgunnahc7xybkwxzy.datawarehouse.fabric.microsoft.com" 
 ACCOUNT_NAME = "onelake"
-WORKSPACE_NAME = "jla_levelup"
-LAKEHOUSE = "LH_LevelUp"
+WORKSPACE_NAME = "<your-workspace-name>"  #e.g. StreamlitdemoWorkspace
+LAKEHOUSE = "<your-lakehouse-name>" #LH_Streamlitdemo
 DATA_TABLES_PATH = f"{LAKEHOUSE}.Lakehouse/Tables"
 
 #delta table details

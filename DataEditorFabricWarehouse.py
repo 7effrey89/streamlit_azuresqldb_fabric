@@ -29,12 +29,12 @@ if 'token' not in st.session_state:
     st.session_state['token'] = None
 
 #the endpoint url is the same for all sql endpoints on the workspace
-SQL_ENDPOINT = "x6eps4xrq2xudenlfv6naeo3i4-jhrvr47hgqiuxicx25egay43ey.msit-datawarehouse.fabric.microsoft.com" 
+SQL_ENDPOINT = "<your-connectionstring>" #e.g. 327tgddygq5ejgjqkdcgviwrja-xmh4dzc6lwgunnahc7xybkwxzy.datawarehouse.fabric.microsoft.com" 
 # database = "LH_LevelUp"
-DATABASE = "DW_LevelUp" #also known as the fabric resource name
+DATABASE = "<your-warehouse-name>" #also known as the fabric resource name
 
-TABLE_SCHEMA = 'dbo'
-TABLE_NAME = 'product'
+TABLE_SCHEMA = '<name-of-schema>' #e.g.'dbo'
+TABLE_NAME = '<name-of-table>' #e.g.'product'
 QUERY = f'select id, name, category from {TABLE_SCHEMA}.{TABLE_NAME};'
 DROP_TABLE = f"DROP TABLE {TABLE_SCHEMA}.{TABLE_NAME}"
 INIT_TABLE = f"""
