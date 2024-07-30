@@ -1,0 +1,7 @@
+# .gitignore
+
+# Ignore the .venv folder
+.venv/
+
+# Ignore everything in the temp folder
+temp/

@@ -1,0 +1,9 @@
+streamlit
+pandas
+sqlalchemy
+azure-identity
+pyodbc
+urllib3
+azure-storage-file-datalake
+deltalake
+numpy
