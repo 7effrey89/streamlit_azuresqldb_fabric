@@ -156,7 +156,7 @@ pyarrow==17.0.0
 pyarrow-hotfix==0.6
 pyasn1==0.6.0
 pyasn1_modules==0.4.0
-pyautogen==0.2.22
+ag2==0.2.22
 pycodestyle==2.11.1
 pycparser==2.22
 pydantic==2.5.3
